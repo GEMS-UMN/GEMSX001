@@ -5,7 +5,7 @@
 #
 DIR=$HOME/Practice
 COLS=2-4,14
-OUT=test_example
+OUT=$DIR/test_example
 
 echo -n 'Starting script: ' ; date
 cd $DIR
