@@ -12,7 +12,10 @@ echo -n 'Starting script: ' ; date
 cd $DIR
 if [ ! -d $OUT ]; then mkdir $OUT; fi
 
+# extract out planting dates first
 cut -d , -f $COLS $IN > $OUT/00_planting_dates.txt
+
+# make sure planting dates are sorted
 sort --field-separator=, $OUT/00_planting_dates.txt > $OUT/01_planting_dates_sorted.txt
 uniq -c $OUT/01_planting_dates_sorted.txt > $OUT/02_city_date_counts.txt
 sort -rn $OUT/02_city_date_counts.txt > $OUT/03_city_date_counts_sorted.txt
