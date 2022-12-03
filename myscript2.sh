@@ -22,3 +22,4 @@ sort -rn $OUT/02_city_date_counts.txt > $OUT/03_city_date_counts_sorted.txt
 
 echo -n 'Finishing script: ' ; date
 
+# See ya later
