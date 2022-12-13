@@ -8,6 +8,7 @@ COLS=2-4,14
 OUT=$DIR/test_example
 IN=$DIR/g2f_2015_hybrid_data_raw.csv
 
+# Hey, let's get started!
 echo -n 'Starting script: ' ; date
 cd $DIR
 if [ ! -d $OUT ]; then mkdir $OUT; fi
