@@ -8,6 +8,7 @@ COLS=2-4,14
 OUT=$DIR/test_example
 IN=$DIR/g2f_2015_hybrid_data_raw.csv
 
+#How many times will I add a line here?
 echo -n 'Starting script: ' ; date
 cd $DIR
 if [ ! -d $OUT ]; then mkdir $OUT; fi
