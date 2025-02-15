@@ -21,7 +21,7 @@ Click the "Web Shell" Interactions
 # Instance webshell
 docker run -ti -p8888:8888 rockylinux:8 /bin/bash
 dnf update -y 
-dnf install -y python3.12 python3.12-pip zip which nano procps-ng ncurses
+dnf install -y python3.12 python3.12-pip zip which nano procps-ng ncurses openssh-clients
 useradd -m jupyter
 su - jupyter
 pip3 install jupyterlab
